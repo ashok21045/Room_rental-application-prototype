@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">room rental</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="login_subtitle">Login to your RoomRental account</string>
+    <string name="username">Username</string>
+    <string name="username_hint">Enter username</string>
+    <string name="password">Password</string>
+    <string name="password_hint">Enter password</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="login">LOGIN</string>
+    <string name="dont_have_account">Don\'t have an account? </string>
+    <string name="register">Register</string>
+    <string name="welcome_home">Welcome to Home Page!</string>
+    <string name="login_success">You have successfully logged in.</string>
+</resources>
