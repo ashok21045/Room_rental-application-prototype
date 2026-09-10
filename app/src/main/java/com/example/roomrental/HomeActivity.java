@@ -1,5 +1,5 @@
 package com.example.roomrental;
-
+import android.widget.TextView;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -27,5 +27,10 @@ public class HomeActivity extends AppCompatActivity {
             }
             return false;
         });
+        TextView textView = findViewById(R.id.textView);
+
+        String name = getIntent().getStringExtra("username");
+
+        textView.setText(name);
     }
 }

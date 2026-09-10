@@ -3,6 +3,7 @@ package com.example.roomrental;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -24,13 +25,13 @@ public class LoginActivity extends AppCompatActivity {
         // Register TextView
         TextView tvRegister = findViewById(R.id.tvRegister);
         Button btnLogin = findViewById(R.id.btnLogin);
+        EditText username = findViewById(R.id.etUsername);
 
         // When Login is clicked
         btnLogin.setOnClickListener(v -> {
-            Intent intent = new Intent(
-                    LoginActivity.this,
-                    HomeActivity.class
-            );
+            String name = username.getText().toString();
+            Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
+            intent.putExtra("username", name );
             startActivity(intent);
             finish(); // Finish LoginActivity so user can't go back to it
         });
